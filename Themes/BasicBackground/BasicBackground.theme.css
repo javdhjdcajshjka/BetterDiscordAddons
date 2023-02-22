@@ -1,55 +1,62 @@
 /**
- * @name BasicBackground
- * @description Allows you to use a Background Image without greatly altering the basic Layout of Discord
+ * @name -
  * @author DevilBro
  * @version 1.0.5
- * @authorId 278543574059057154
+ * @description Allows you to use a background image without greatly altering the basic look of Discord.
+ * @source https://raw.githubusercontent.com/mwittrien/BetterDiscordAddons/master/Themes/BasicBackground/BasicBackground.theme.css
  * @invite Jx3TjNS
  * @donate https://www.paypal.me/MircoWittrien
  * @patreon https://www.patreon.com/MircoWittrien
- * @website https://mwittrien.github.io/
- * @source https://github.com/mwittrien/BetterDiscordAddons/tree/master/Themes/BasicBackground/
- * @updateUrl https://mwittrien.github.io/BetterDiscordAddons/Themes/BasicBackground/BasicBackground.theme.css
- */
+ * @website https://github.com/mwittrien/BetterDiscordAddons/tree/master/Themes/BasicBackground
+ * @authorId 278543574059057154
+ * @BDEditor BasicBackground
+*/
 
-/* To change stuff like the colors, transparency and background image, change the variables inside the root {}, do NOT change the @import url() */
-
-@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/BasicBackground/BasicBackground.css);
+@import url('https://fonts.googleapis.com/css2?family=Comic+Sans+MS:wght@100;300;400;500;700&display=swap');
+@import url('https://mwittrien.github.io/BetterDiscordAddons/Themes/BasicBackground/BasicBackground.css');
+@import url('https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css');
 
 :root {
-	--transparencycolor:			0,0,0;						/* default:	0,0,0																								*/
-	--transparencyalpha:			0.15;						/* default: 0.15				(general darkness of the app)													*/
-	--messagetransparency:			0.5;						/* default: 0.5					(additional shadows behind messages, set to 0 to remove boxes)					*/
-	--guildchanneltransparency:		0.15;						/* default: 0.15				(additional darkness for guild/channel list)									*/
-	--chatinputtransparency:		0.0;						/* default: 0.0					(additional darkness for chat input container)									*/
-	--memberlisttransparency:		0.0;						/* default: 0.0					(additional darkness for member list)											*/
-	--accentcolor:					190,78,180;					/* default: 190,78,180			(RGB-format - blurple: 88,101,242 bd-blue: 58,113,193)							*/
-	
-	--font:							"gg sans", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;		/* font used in most places										*/
-	--textshadow:					transparent;				/* default: transparent			(textshadow for text ontop of accentcolor nodes, ONLY accepts a color, no px)	*/
-	--settingsicons:				1;							/* Use Settings Icons in User/Server/Channel Settings: 1 = yes, 0 = no											*/
-	
-	--background:					url(https://mwittrien.github.io/BetterDiscordAddons/Themes/BasicBackground/_res/background.jpg);	/* general background image				*/
-	--backgroundposition:			center;						/* default: center				(position of background - values: [center/top/right/bottom/left])				*/
-	--backgroundsize:				cover;						/* default: cover				(sizefit of background - values: [cover/contain/auto])							*/
-	--backgroundblur:				unset;						/* default: unset				(blur in px, only works when --background is set to an image)					*/
-	
-	--popout:						var(--background);			/* default: var(--background)	(change to use another background/color for modals/popouts)						*/
-	--popoutposition:				var(--backgroundposition);	/* default: center				(position of popout - values: [center/top/right/bottom/left])					*/
-	--popoutsize:					var(--backgroundsize);		/* default: cover				(sizefit of popout - values: [cover/contain/auto])								*/
-	--popoutblur:					var(--backgroundblur);		/* default: unset				(blur in px, only works when --popout is set to an image)						*/
-	
-	--backdrop:						rgba(0,0,0,0.85);			/* default: rgba(0,0,0,0.85)	(change to use another background/color for backdrops)							*/
-	--backdropposition:				center;						/* default: center				(position of backdrop - values: [center/top/right/bottom/left])					*/
-	--backdropsize:					cover;						/* default: cover				(sizefit of backdrop - values: [cover/contain/auto])							*/
-	--backdropblur:					unset;						/* default: unset				(blur in px, only works when --backdrop is set to an image)						*/
-	
-	--textbrightest: 				255,255,255;				/* default: 255,255,255			(text color for the brightest texts)											*/
-	--textbrighter: 				222,222,222;				/* default: 222,222,222			(text color for brighter texts)													*/
-	--textbright: 					200,200,200;				/* default: 200,200,200			(text color for bright texts)													*/
-	--textdark: 					160,160,160;				/* default: 160,160,160			(text color for dark texts)														*/
-	--textdarker: 					125,125,125;				/* default: 125,125,125			(text color for darker texts)													*/
-	--textdarkest: 					90,90,90;					/* default: 90,90,90			(text color for the darkest texts)												*/
-	
+  --background: url('https://pbs.twimg.com/media/FJOSNVWaAAQdVfG?format=jpg&name=large');
+  --backgroundsize: cover;
+  --backgroundposition: center;
+  --backgroundblur: 0px;
+  --popout: url('https://i.pinimg.com/564x/f4/e4/8f/f4e48f4c3c97dcfa982b0ad9ac5cf716.jpg');
+  --popoutsize: cover;
+  --backgroundposition: center;
+  --popoutblur: 0px;
+  --transparencycolor: 0,0,0;
+  --accentcolor: 131,93,83;
+  --backdrop: rgba(0,0,0,0.85);
+  --textshadow: transparent;
+  --transparencyalpha: 0.48;
+  --messagetransparency: 0.2;
+  --guildchanneltransparency: 0.15;
+  --chatinputtransparency: 0;
+  --memberlisttransparency: 0;
+  --font: Whitney;
+  --textbrightest: 255,255,255;
+  --textbrighter: 222,222,222;
+  --textbright: 200,200,200;
+  --textdark: 160,160,160;
+  --textdarker: 125,125,125;
+  --textdarkest: 90,90,90;
+  --settingsicons: 1;
+  --backdropsize: var(--background-size);
+  --backdropblur: 0px;
+  --version1_0_5: none;
+  --rs-small-spacing: 2px;
+  --rs-medium-spacing: 2px;
+  --rs-large-spacing: 10px;
+  --rs-small-width: 2px;
+  --rs-medium-width: 0px;
+  --rs-large-width: 0px;
+  --rs-avatar-shape: 50%;
+  --rs-online-color: #FFB1D2;
+  --rs-idle-color: #F1D19C;
+  --rs-dnd-color: #B95B5B;
+  --rs-offline-color: #B3A3CF;
+  --rs-streaming-color: #643da7;
+  --rs-phone-visible: block;
 	--version1_0_5:					none;						/* DO NOT CHANGE THIS VARIABLE , USED TO HIDE UPDATE NOTICE														*/
 }
