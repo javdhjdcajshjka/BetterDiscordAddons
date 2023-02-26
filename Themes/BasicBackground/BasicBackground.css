@@ -95,6 +95,8 @@
 	--elevation-high: 0 2px 10px 0 rgba(var(--transparencycolor), .3);
 	--font-primary: var(--font) !important;
 	--font-display: var(--font) !important;
+	--homeImage: url('https://i.imgur.com/KAjNVbm.png');
+  	--homeImageSize: cover;
 }
 
 html {
