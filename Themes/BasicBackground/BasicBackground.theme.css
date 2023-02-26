@@ -58,7 +58,5 @@
   --rs-offline-color: #B3A3CF;
   --rs-streaming-color: #643da7;
   --rs-phone-visible: block;
-  --homeImage: url('https://i.imgur.com/KAjNVbm.png');
-  --homeImageSize: cover;
 	--version1_0_5:					none;						/* DO NOT CHANGE THIS VARIABLE , USED TO HIDE UPDATE NOTICE														*/
 }
